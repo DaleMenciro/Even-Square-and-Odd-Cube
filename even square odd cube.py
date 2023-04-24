@@ -15,6 +15,8 @@ def process_file():
 
         #append square of even numbers to double.txt
         with open("double.txt", "a") as double_file:
+            for n in even_integers:
+                double_file.write(str(n * n) + "\n")
         #append cube of odd numbers to triple.txt
 
 
