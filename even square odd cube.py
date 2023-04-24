@@ -7,7 +7,7 @@ integers.txt.
 '''
 def process_file():
         #read integers from integers.txt
-    with open("integers") as input_file:
+    with open("integers.txt") as input_file:
         integers = list(map(int, input_file.read().split()))
         #extract all even and odd from the list
         even_integers = [n for n in integers if n % 2 == 0]
@@ -22,8 +22,6 @@ def process_file():
         with open("triple.txt", "a") as triple_file:
             for n in odd_integers:
                 triple_file.write(str(n * n * n) + "\n")
-                
-
 
 
 #====== START =====
