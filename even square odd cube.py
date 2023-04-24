@@ -7,6 +7,8 @@ integers.txt.
 '''
 def process_file():
     #read integers from integers.txt
+    with open("integers") as input_file:
+        integers = list(map(int, input_file.read().split()))
     #extract all even and odd from the list
     #append square of even numbers to double.txt
     #append cube of odd numbers to triple.txt
