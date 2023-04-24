@@ -12,7 +12,9 @@ def process_file():
         #extract all even and odd from the list
         even_integers = [n for n in integers if n % 2 == 0]
         odd_integers = [n for n in integers if n % 2 != 0]
+
         #append square of even numbers to double.txt
+        with open("double.txt", "a") as double_file:
         #append cube of odd numbers to triple.txt
 
 
