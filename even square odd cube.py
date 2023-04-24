@@ -11,6 +11,7 @@ def process_file():
         integers = list(map(int, input_file.read().split()))
         #extract all even and odd from the list
         even_integers = [n for n in integers if n % 2 == 0]
+        odd_integers = [n for n in integers if n % 2 != 0]
         #append square of even numbers to double.txt
         #append cube of odd numbers to triple.txt
 
