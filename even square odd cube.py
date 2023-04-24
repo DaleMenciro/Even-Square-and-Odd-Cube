@@ -20,7 +20,10 @@ def process_file():
         
         #append cube of odd numbers to triple.txt
         with open("triple.txt", "a") as triple_file:
-            
+            for n in odd_integers:
+                triple_file.write(str(n * n * n) + "\n")
+                
+
 
 
 #====== START =====
