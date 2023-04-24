@@ -25,4 +25,4 @@ def process_file():
 
 
 #====== START =====
-    process_file()
+process_file()
