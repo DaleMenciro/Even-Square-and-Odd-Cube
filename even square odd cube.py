@@ -19,6 +19,10 @@ def process_file():
             for n in odd_integers:
                 triple_file.write(str(n * n * n) + "\n")
 
+def browse_input_file_path():
+    global input_file_path
+    input_file_path = filedialog.askopenfilename()
+
 
 #====== START =====
 process_file()
