@@ -37,6 +37,10 @@ input_file_path = ""
 output_dir_path = ""
 
 #create main window
+root = tk.Tk()
+root.title("Process Files")
+root.geometry("400x200")
+
 #create input file selection button
 #create output directory selection button
 #create process button
