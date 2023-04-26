@@ -36,3 +36,7 @@ def process_files():
 input_file_path = ""
 output_dir_path = ""
 
+#create main window
+#create input file selection button
+#create output directory selection button
+#create process button
