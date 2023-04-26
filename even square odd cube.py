@@ -3,7 +3,7 @@ from tkinter import filedialog, messagebox
 
 def process_file(input_path, output_dir):
         #read integers from integers.txt
-    with open("integers.txt") as input_file:
+    with open(input_path) as input_file:
         integers = list(map(int, input_file.read().split()))
         #extract all even and odd from the list
         even_integers = [n for n in integers if n % 2 == 0]
