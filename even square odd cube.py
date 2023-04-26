@@ -10,12 +10,12 @@ def process_file(input_path, output_dir):
         odd_integers = [n for n in integers if n % 2 != 0]
 
         #append square of even numbers to double.txt
-        with open("double.txt", "a") as double_file:
+        with open(output_dir + "double.txt", "a") as double_file:
             for n in even_integers:
                 double_file.write(str(n * n) + "\n")
         
         #append cube of odd numbers to triple.txt
-        with open("triple.txt", "a") as triple_file:
+        with open(output_dir +"triple.txt", "a") as triple_file:
             for n in odd_integers:
                 triple_file.write(str(n * n * n) + "\n")
 
