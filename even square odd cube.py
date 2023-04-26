@@ -42,5 +42,8 @@ root.title("Process Files")
 root.geometry("400x200")
 
 #create input file selection button
+input_button = tk.Button(root, text="Select Input File", command=browse_input_file_path)
+input_button.pack(pady=10)
+
 #create output directory selection button
 #create process button
