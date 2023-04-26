@@ -46,4 +46,7 @@ input_button = tk.Button(root, text="Select Input File", command=browse_input_fi
 input_button.pack(pady=10)
 
 #create output directory selection button
+output_button = tk.Button(root, text="Select Output Directory", command=browse_output_dir_path)
+output_button.pack(pady=10)
+
 #create process button
