@@ -50,3 +50,5 @@ output_button = tk.Button(root, text="Select Output Directory", command=browse_o
 output_button.pack(pady=10)
 
 #create process button
+process_button = tk.Button(root, text="Process Files", command=process_files)
+process_button.pack(pady=10)
