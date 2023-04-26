@@ -35,7 +35,6 @@ def process_files():
     global input_file_path, output_dir_path
     process_file(input_file_path, output_dir_path)
 
-#====== START =====
 
 input_file_path = ""
 output_dir_path = ""
@@ -56,3 +55,6 @@ output_button.pack(pady=10)
 #create process button
 process_button = tk.Button(root, text="Process Files", command=process_files)
 process_button.pack(pady=10)
+
+#====== START ===
+root.mainloop()
