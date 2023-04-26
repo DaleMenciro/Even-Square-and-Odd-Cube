@@ -3,7 +3,7 @@ from tkinter import filedialog, messagebox
 
 def process_file(input_path, output_dir):
     try:
-            #read integers from integers.txt
+        #read integers from integers.txt
         with open(input_path) as input_file:
             integers = list(map(int, input_file.read().split()))
             #extract all even and odd from the list
@@ -19,7 +19,7 @@ def process_file(input_path, output_dir):
             with open(output_dir +"triple.txt", "a") as triple_file:
                 for n in odd_integers:
                     triple_file.write(str(n * n * n) + "\n")
-            messagebox.showinfo("Task Complete", "Even are Squared and Odds are Cubed!")
+        messagebox.showinfo("Task Complete", "Even are Squared and Odds are Cubed!")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {str(e)}")     
     
