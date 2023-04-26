@@ -1,3 +1,6 @@
+import tkinter as tk
+from tkinter import filedialog, messagebox
+
 def process_file():
         #read integers from integers.txt
     with open("integers.txt") as input_file:
