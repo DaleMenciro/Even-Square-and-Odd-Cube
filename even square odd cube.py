@@ -23,6 +23,9 @@ def browse_input_file_path():
     global input_file_path
     input_file_path = filedialog.askopenfilename()
 
+def browse_output_dir_path():
+    global output_dir_path
+    output_dir_path = filedialog.askdirectory()
 
 #====== START =====
 process_file()
