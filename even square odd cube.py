@@ -32,4 +32,7 @@ def process_files():
     process_file(input_file_path, output_dir_path)
 
 #====== START =====
-process_file()
+
+input_file_path = ""
+output_dir_path = ""
+
