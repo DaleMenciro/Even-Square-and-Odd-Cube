@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-def process_file():
+def process_file(input_path, output_dir):
         #read integers from integers.txt
     with open("integers.txt") as input_file:
         integers = list(map(int, input_file.read().split()))
